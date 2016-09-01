@@ -16,7 +16,7 @@ body  {
 .welcome-module {
   padding: 10px 20px;
   width:30%;
-  display: inline-block;
+  display: inline-block ;
   text-align: center;
 }
 
@@ -117,6 +117,14 @@ li a {
 
 /*CUBO*/
 
+.show {
+  display: inline-block;
+}
+
+.hidden {
+  display: none;
+}
+
 .container {
   width: 70%;
   height: 350px;
@@ -126,6 +134,7 @@ li a {
   font-size: 0;
   color:transparent;
   z-index: 0;
+  display: inline-block;
 }
 
 #cube {
@@ -172,7 +181,6 @@ background-color: rgba(153, 204, 255,0.5)}
 background-color: rgba(153, 204, 255,0.5))
 ;}
 
-
 #cube .front  { transform: rotateY(   0deg ) translateZ(125px ); }
 #cube .back   { transform: rotateX( 180deg ) translateZ(125px ); }
 #cube .right  { transform: rotateY(  90deg ) translateZ(125px ); }
@@ -198,18 +206,18 @@ background-color: rgba(153, 204, 255,0.5))
     z-index: 1;
     margin: 0px 25% ;
     padding: 10px;
-    top:600px;
-    left: 10px;
+    top:620px;
+    left: 40px;
   }
 
   #cube figure {
-    width:150px;
-    height:150px;
+    width:100px;
+    height:100px;
   }
 
   #cube {
-    width:150px;
-    height: 150px;
+    width:100px;
+    height: 100px;
   }
 
   nav ul li {
@@ -217,12 +225,12 @@ background-color: rgba(153, 204, 255,0.5))
     width:100%;
   }
 
-  #cube .front  { transform: rotateY(   0deg ) translateZ(75px ); }
-  #cube .back   { transform: rotateX( 180deg ) translateZ(75px ); }
-  #cube .right  { transform: rotateY(  90deg ) translateZ(75px ); }
-  #cube .left   { transform: rotateY( -90deg ) translateZ(75px ); }
-  #cube .top    { transform: rotateX(  90deg ) translateZ(75px ); }
-  #cube .bottom { transform: rotateX( -90deg ) translateZ(75px ); }
+  #cube .front  { transform: rotateY(   0deg ) translateZ(50px ); }
+  #cube .back   { transform: rotateX( 180deg ) translateZ(50px ); }
+  #cube .right  { transform: rotateY(  90deg ) translateZ(50px ); }
+  #cube .left   { transform: rotateY( -90deg ) translateZ(50px ); }
+  #cube .top    { transform: rotateX(  90deg ) translateZ(50px ); }
+  #cube .bottom { transform: rotateX( -90deg ) translateZ(50px ); }
 
   .container {
     width: 100%;

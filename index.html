@@ -13,7 +13,7 @@
   <body>
     <header>
       <h1>LAZY GEOMETRY</h1>
-        <h2> Making the world more fun <br> one bit at a time</h2>
+        <h2> Making the world more fun <br> one cube at a time</h2>
         <nav>
           <ul>
             <li><a href="#">HOME</a></li>
@@ -33,7 +33,7 @@
 
         <h3 id="main-sub">Welcome to your cube world</h3>
         <p>
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+          This is your cube. He is your friend-cube. Your friend-cube will show you the wonders of Lazy Geometry, the cube generating and sharing site. Your friend-cube has all the time of the world so don't be ashamed of taking the time to learn the basics of cube-making. Have fun!
         </p>
 
         <a href="#"class="cta">
@@ -54,20 +54,32 @@
         </div>
       </section>
 
-
-      <script>
-      $(document).scroll(function() {
-        var y = $(this).scrollTop();
-        if (y > 100) {
-          $('.cube-module').fadeIn();
-        } else {
-          $('.cube-module').fadeOut();
-        }
-      });
-      </script>
-
         </div>
       </div>
     </main>
   </body>
+
+  <script>
+  $(document).scroll(function() {
+    var y = $(this).scrollTop();
+    if (y > 100) {
+      $('.show').fadeIn();
+    } else {
+      $('.show').fadeOut();
+    }
+  });
+
+  $(window).resize(function(){
+   console.log('resize called');
+   var width = $(window).width();
+   if(width <= 800 && width >= 100){
+       $('#cube-container').removeClass('').addClass('show');
+   }
+   else{
+       $('#cube-container').removeClass('show').addClass('');
+   }
+})
+.resize();//trigger the resize event on page load.
+  </script>
+
 </html>
