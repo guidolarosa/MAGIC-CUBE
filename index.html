@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+  <head>
+
+      <meta charset="utf-8">
+    <title>LAZY GEOMETRY</title>
+    <meta name="viewport" content="width=device-width">
+      <meta lang="es">
+    <link rel="stylesheet" href="style.css" media="screen" title="main">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat|Roboto" rel="stylesheet">
+
+  </head>
+  <body>
+    <header>
+      <h1>LAZY GEOMETRY</h1>
+        <h2> Making the world more fun <br> one bit at a time</h2>
+        <nav>
+          <ul>
+            <li><a href="#">HOME</a></li>
+            <li><a href="#">OUR CUBES</a></li>
+            <li><a href="#">CO-OP CUBES</a></li>
+            <li><a href="#">CUBE TV</a></li>
+            <li class="hidden-li">CUBE LAB</li>
+            <li class="hidden-li">CUBE TALK</li>
+            <li class="hidden-li">CUBE DATABASE</li>
+            <li class="hidden-li">BUY THE CUBE</li>
+          </ul>
+        </nav>
+    </header>
+
+    <main>
+      <div class="welcome-module">
+
+        <h3 id="main-sub">Welcome to your cube world</h3>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+        </p>
+
+        <a href="#"class="cta">
+        ENTER THE CUBE!
+        </a>
+
+      </div>
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+      <div class="cube-module">
+        <section id="cube-container" class="container">
+        <div id="cube">
+          <figure class="front"></figure>
+          <figure class="back"></figure>
+          <figure class="right"></figure>
+          <figure class="left"></figure>
+          <figure class="top"></figure>
+          <figure class="bottom"></figure>
+        </div>
+      </section>
+
+
+      <script>
+      $(document).scroll(function() {
+        var y = $(this).scrollTop();
+        if (y > 100) {
+          $('.cube-module').fadeIn();
+        } else {
+          $('.cube-module').fadeOut();
+        }
+      });
+      </script>
+
+        </div>
+      </div>
+    </main>
+  </body>
+</html>
